@@ -3,11 +3,20 @@
 
 This repository contains code examples for the API chapters of [_JavaScript Everywhere_](https://www.jseverywhere.io/) by Adam D. Scott, published by O'Reilly Media
 
-## Seed Data
+## Config .env
 
-To seed data for local development: `npm run seed`. The password for all of the seeded users is `password`.
+```shell
+$ cp .env.example .env
+```
 
-Each time this command is run, it will generate 10 users and 25 notes.
+## Setup your DBhost & Token Secret
+
+```.env
+DB_HOST=<Your MongoDB URL>
+TEST_DB=<A MongoDB URL for Running Tests>
+
+JWT_SECRET=<Your json web token secret>
+```
 
 ## To Run the API
 
